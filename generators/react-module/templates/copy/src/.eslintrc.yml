@@ -1,0 +1,4 @@
+extends: neptune-react
+settings:
+  react:
+    version: '16.2'

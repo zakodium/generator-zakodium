@@ -1,0 +1,32 @@
+{
+  "name": "generator-zakodium",
+  "version": "1.0.0",
+  "description": "Project generators for the zakodium organization",
+  "main": "index.js",
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "chalk": "^2.4.1",
+    "generator-node": "^2.5.0",
+    "yeoman-generator": "^3.1.1",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakodium/generator-zakodium.git"
+  },
+  "keywords": [
+    "generator",
+    "yeoman",
+    "yo"
+  ],
+  "author": "Daniel Kostro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakodium/generator-zakodium/issues"
+  },
+  "homepage": "https://github.com/zakodium/generator-zakodium#readme"
+}

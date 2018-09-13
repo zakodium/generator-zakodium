@@ -1,0 +1,33 @@
+{
+  "name": "<%= npmName %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "lib/index.js",
+  "module": "lib-es6/index.js",
+  "files": ["lib", "src"],
+  "scripts": {
+    "compile": "babel src --out-dir lib --ignore __tests__ --quiet",
+    "compile-es6": "BABEL_ENV=es6 babel src --out-dir lib-es6 --ignore __tests__ --quiet",
+    "start": "webpack-serve",
+    "test": "run-s test-only eslint",
+    "test-only": "jest",
+    "eslint": "eslint src",
+    "eslint-fix": "eslint --fix src",
+    "prepublishOnly": "run-p compile compile-es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%= org %>/<%= name %>.git"
+  },
+  "keywords": [],
+  "author": "<%= userName %>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<%= org %>/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/<%= org %>/<%= name %>#readme",
+  "peerDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
